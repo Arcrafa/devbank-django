@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+	<loc>developers.unimagdalena.edu.co</loc>
+	<lastmod>2021-08-02</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>developers.unimagdalena.edu.co/img/logogreen.svg</image:loc>
+	<image:title>logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>developers.unimagdalena.edu.co/img/devbank-logo.svg</image:loc>
+	<image:title>devbank logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>developers.unimagdalena.edu.co/img/bank-code.png</image:loc>
+	<image:title>bank code</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>developers.unimagdalena.edu.co/img/Capture.png</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>developers.unimagdalena.edu.co/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+</urlset>
