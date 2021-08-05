@@ -44,7 +44,7 @@
 		<div class="row">
 			<div class="col-12">
 				<nav class="navbar row navbar-expand-md navbar-dark" role="navigation">
-					<a class="navbar-brand d-sm-block d-none" href="#" data-scroll-speed="1000" onclick="scrollToTarget('1',this)"><img src="{% static 'devbank/img/lazyload-ph.png' %}' %}" data-src="{% static 'devbank/img/logogreen.svg' %}" alt="logo" class="lazyload" /></a>
+					<a class="navbar-brand d-sm-block d-none" href="#" data-scroll-speed="1000" onclick="scrollToTarget('1',this)"><img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/logogreen.svg' %}" alt="logo" class="lazyload" /></a>
 					<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto " data-toggle="collapse" data-target=".navbar-16723" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -449,18 +449,18 @@
 				</h4>
 			</div>
 			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
-				<form id="form_6219" data-form-type="blocs-form" action="custom-action-url" method="POST">
+				<form id="form_6219" data-form-type="blocs-form" action="api/interested/?format=json" method="POST">
 					<div class="form-group">
 						<label class="black-style p-job">
 							Full name
 						</label>
-						<input id="fullname" class="form-control" required name="fullname" placeholder="Insert Full Name" data-validation-required-message="You must to write down your full name." />
+						<input id="fullname" class="form-control" required name="full_name" placeholder="Insert Full Name" data-validation-required-message="You must to write down your full name." />
 					</div>
 					<div class="form-group">
 						<label class="p-job black-style">
 							Student code
 						</label>
-						<input id="studentcode" class="form-control" required name="studentcode" type="number" data-validation-required-message="Please, insert your student code." placeholder="Insert your Student Code" />
+						<input id="studentcode" class="form-control" required name="student_code" type="number" data-validation-required-message="Please, insert your student code." placeholder="Insert your Student Code" />
 					</div>
 					<div class="form-group">
 						<label class="p-job black-style">
@@ -473,7 +473,7 @@
 							Enrollment category
 						</label>
 						<div class="form-group">
-							<select class="form-control p-quote black-style" id="enrollment" name="enrollment">
+							<select class="form-control p-quote black-style" id="enrollment" name="category">
 								<option value="backend">
 									Backend Developer
 								</option>
@@ -531,7 +531,7 @@
 				<div class="col-md-3 col-sm-6 col-lg-5 offset-lg-4">
 					<h4 class="mg-md text-sm-left text-center">
 						<br>
-					</h4><img src="{% static 'devbank/lazyload-ph.png' %}" data-src="{% static 'devbank/img/LogosUMDB.svg' %}" class="img-fluid mx-auto d-block lazyload" alt="LogosUMDB" />
+					</h4><img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/LogosUMDB.svg' %}" class="img-fluid mx-auto d-block lazyload" alt="LogosUMDB" />
 				</div>
 			</div>
 		<div class="row voffset-md">
@@ -547,7 +547,7 @@
 <!-- Main container END -->
     
 
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <!-- Additional JS -->
 <script src="{% static 'devbank/js/jquery.min.js' %}"></script>
 <script src="{% static 'devbank/js/bootstrap.bundle.min.js' %}"></script>
@@ -556,9 +556,9 @@
 <script src="{% static 'devbank/js/formHandler.js' %}"></script>
 <script src="{% static 'devbank/js/lazysizes.min.js' %}"></script>
 <script src="{% static 'devbank/js/scrollFX.js' %}"></script>
-<script src="{% static 'devbank/js/interested_post.js' %}"></script>
+<script src="{% static 'devbank/js/interestedPost.js' %}"></script>
 <!-- Additional JS END -->
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
 
 </body>
