@@ -19,9 +19,11 @@ from rest_framework import routers,serializers,viewsets
 from django.conf import settings
 from django.conf.urls.static import static
 from . import views
+from interested.views import InterestedViewSet
 
 
 router=routers.DefaultRouter()
+router.register(r'interested',InterestedViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

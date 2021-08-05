@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m%hx(a79ou29cmy=cx$$_+c&q9cajpbh6d4zm#ea@gcyg^2i3r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['devbank.duckdns.org', '127.0.0.1', 'developers.unimagdalena.edu.co', '10.11.60.10' ]
+ALLOWED_HOSTS = ['devbank.duckdns.org', '127.0.0.1', 'developers.unimagdalena.edu.co', '10.11.60.10' ,'localhost']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'devbank',
+    'interested'
 ]
 
 MIDDLEWARE = [
@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'devbank.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# noinspection PyInterpreter
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
 
