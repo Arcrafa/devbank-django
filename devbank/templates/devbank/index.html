@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Software, Developers, Unimmagdalena">
+    <meta name="keywords" content="Software, Developers, Unimagdalena">
     <meta name="description" content="We are a Unimagdalena initiatitive to close the job gap between our students and graduates, and local, national and international companies developers needs.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="canonical" href="developers.unimagdalena.edu.co/" />
@@ -18,7 +18,7 @@
 	<meta property="og:title" content="Developers Bank Unimagdalena">
 	<meta property="og:description" content="We are a Unimagdalena initiatitive to close the job gap between our students and graduates, and local, national and international companies developers needs.">
 	<meta property="og:url" content="developers.unimagdalena.edu.co/"> 
-    <link rel="shortcut icon" type="image/svg" href="favicon.svg">
+    <link rel="shortcut icon" type="image/svg" href="{% static 'devbank/favicon.svg' %}">
     
 	<link rel="stylesheet" type="text/css" href="{% static 'devbank/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'devbank/style.css' %}">
@@ -44,7 +44,7 @@
 		<div class="row">
 			<div class="col-12">
 				<nav class="navbar row navbar-expand-md navbar-dark" role="navigation">
-					<a class="navbar-brand d-sm-block d-none" href="#" data-scroll-speed="1000" onclick="scrollToTarget('1',this)"><img src="img/lazyload-ph.png" data-src="img/logogreen.svg" alt="logo" class="lazyload" /></a>
+					<a class="navbar-brand d-sm-block d-none" href="#" data-scroll-speed="1000" onclick="scrollToTarget('1',this)"><img src="{% static 'devbank/img/lazyload-ph.png' %}' %}" data-src="{% static 'devbank/img/logogreen.svg' %}" alt="logo" class="lazyload" /></a>
 					<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto " data-toggle="collapse" data-target=".navbar-16723" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -77,7 +77,7 @@
 	<div class="container">
 		<div class="row scroll-fx-up-out">
 			<div class="align-self-center col-md-7 col-lg-4 noneLeft">
-				<img src="img/lazyload-ph.png" data-src="img/devbank-logo.svg" class="img-fluid mx-auto d-block lazyload" alt="devbank logo" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/devbank-logo.svg' %}" class="img-fluid mx-auto d-block lazyload" alt="devbank logo" />
 				<h1 class="mg-md text-center text-md-left tc-white h1-devbank">
 					Where you deposit your knowledge, skills and abilities to <span class="light-green">make your future profitable.</span>
 				</h1>
@@ -86,7 +86,7 @@
 				</div>
 			</div>
 			<div class="col-sm-8 offset-sm-2 offset-md-0 col-md-5 col-lg-7 offset-lg-1 none">
-				<img src="img/lazyload-ph.png" data-src="img/bank-code.png" class="img-fluid mx-auto d-sm-block d-none lazyload" alt="bank code" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/bank-code.png' %}" class="img-fluid mx-auto d-sm-block d-none lazyload" alt="bank code" />
 			</div>
 		</div>
 	</div>
@@ -152,17 +152,17 @@
 				</p>
 			</div>
 			<div class="col-md-4 offset-lg-0 col-lg-2 order-lg-1 order-0">
-				<img src="img/lazyload-ph.png" data-src="img/visibility.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/visibility.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-12">
-				<img src="img/lazyload-ph.png" data-src="img/vBar.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/vBar.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-2 offset-lg-5">
-				<img src="img/lazyload-ph.png" data-src="img/Qualification.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/Qualification.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 			<div class="col-md-4 col-lg-3 offset-lg-0">
 				<h4 class="h4-devbank white-color mg-clear text-lg-left mg-sm-xs">
@@ -175,7 +175,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-12">
-				<img src="img/lazyload-ph.png" data-src="img/vBar.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/vBar.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 		</div>
 		<div class="row">
@@ -188,17 +188,17 @@
 				</p>
 			</div>
 			<div class="col-md-4 offset-lg-0 order-lg--1 col-lg-2">
-				<img src="img/lazyload-ph.png" data-src="img/Growth.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/Growth.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-12">
-				<img src="img/lazyload-ph.png" data-src="img/vBar.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/vBar.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-lg-2 offset-lg-5">
-				<img src="img/lazyload-ph.png" data-src="img/reputation.svg" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/reputation.svg' %}" class="img-fluid img-visibili-style mx-auto d-block mg-md lazyload" alt="visibility" />
 			</div>
 			<div class="col-md-4 col-lg-3">
 				<h4 class="h4-devbank white-color mg-clear text-lg-left mg-sm-xs">
@@ -236,7 +236,7 @@
 			<div class="col-md-4 align-self-center col-lg-4 offset-lg-0">
 				<div class="card card-style border-0">
 					<div class="embed-responsive embed-responsive-9by16">
-						<iframe class="embed-responsive-item lazyload" src="img/lazyload-ph.png" data-src="https://www.youtube.com/embed/VLJJRFIqTIA" frameborder="0" allow="picture-in-picture" allowfullscreen>
+						<iframe class="embed-responsive-item lazyload" src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="https://www.youtube.com/embed/VLJJRFIqTIA" frameborder="0" allow="picture-in-picture" allowfullscreen>
 						</iframe>
 					</div>
 					<div class="card-body">
@@ -258,7 +258,7 @@
 			<div class="col-md-4 mt-3 mt-md-0 col-lg-4">
 				<div class="card card-style border-0">
 					<div class="embed-responsive embed-responsive-9by16">
-						<iframe class="embed-responsive-item lazyload" src="img/lazyload-ph.png" data-src="https://www.youtube.com/embed/DBbMhiJCQAU" frameborder="0" allow="picture-in-picture" allowfullscreen>
+						<iframe class="embed-responsive-item lazyload" src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="https://www.youtube.com/embed/DBbMhiJCQAU" frameborder="0" allow="picture-in-picture" allowfullscreen>
 						</iframe>
 					</div>
 					<div class="card-body">
@@ -280,7 +280,7 @@
 			<div class="col-md-4 mt-3 mt-md-0 align-self-center col-lg-4">
 				<div class="card card-style border-0">
 					<div class="embed-responsive embed-responsive-9by16">
-						<iframe class="embed-responsive-item lazyload" src="img/lazyload-ph.png" data-src="https://www.youtube.com/embed/roS1fx_blw4" frameborder="0" allow="picture-in-picture" allowfullscreen>
+						<iframe class="embed-responsive-item lazyload" src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="https://www.youtube.com/embed/roS1fx_blw4" frameborder="0" allow="picture-in-picture" allowfullscreen>
 						</iframe>
 					</div>
 					<div class="card-body">
@@ -309,16 +309,16 @@
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-6 col-sm-3">
-				<img src="img/lazyload-ph.png" data-src="img/ny-times.png" class="img-fluid mx-auto d-block lazyload" alt="ny times" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="img/ny-times.png" class="img-fluid mx-auto d-block lazyload" alt="ny times" />
 			</div>
 			<div class="col-6 col-sm-3">
-				<img src="img/lazyload-ph.png" data-src="img/forbes.png" class="img-fluid mx-auto d-block lazyload" alt="forbes" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="img/forbes.png" class="img-fluid mx-auto d-block lazyload" alt="forbes" />
 			</div>
 			<div class="col-6 col-sm-3">
-				<img src="img/lazyload-ph.png" data-src="img/wired.png" class="img-fluid mx-auto d-block lazyload" alt="wired" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="img/wired.png" class="img-fluid mx-auto d-block lazyload" alt="wired" />
 			</div>
 			<div class="col-6 col-sm-3">
-				<img src="img/lazyload-ph.png" data-src="img/guardian.png" class="img-fluid mx-auto d-block lazyload" alt="guardian" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="img/guardian.png" class="img-fluid mx-auto d-block lazyload" alt="guardian" />
 			</div>
 		</div>
 	</div>
@@ -356,7 +356,7 @@
 						</p>
 						<div class="row">
 							<div class="col-lg-3">
-								<img src="img/lazyload-ph.png" data-src="img/fabian.png" class="img-fluid rounded-circle mx-auto d-block img-style lazyload" alt="fabian" />
+								<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/fabian.png' %}" class="img-fluid rounded-circle mx-auto d-block img-style lazyload" alt="fabian" />
 							</div>
 							<div class="col offset-lg-0">
 								<ul class="list-unstyled">
@@ -395,7 +395,7 @@
 						</p>
 						<div class="row">
 							<div class="col-lg-3">
-								<img src="img/lazyload-ph.png" data-src="img/jaime.png" class="img-fluid rounded-circle mx-auto d-block img-style lazyload" alt="jaime" />
+								<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/jaime.png' %}" class="img-fluid rounded-circle mx-auto d-block img-style lazyload" alt="jaime" />
 							</div>
 							<div class="col offset-lg-0">
 								<ul class="list-unstyled">
@@ -443,7 +443,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-6 align-self-center">
-				<img src="img/lazyload-ph.png" data-src="img/Black-logo.svg" class="img-fluid mx-auto img-black-lo-style d-sm-block d-none lazyload" alt="Black logo" />
+				<img src="{% static 'devbank/img/lazyload-ph.png' %}" data-src="{% static 'devbank/img/Black-logo.svg' %}" class="img-fluid mx-auto img-black-lo-style d-sm-block d-none lazyload" alt="Black logo" />
 				<h4 class="black-style h2-devbank mg-lg d-sm-block d-none h4-padding-top">
 					<br>You are just one click away to join us.
 				</h4>
@@ -531,7 +531,7 @@
 				<div class="col-md-3 col-sm-6 col-lg-5 offset-lg-4">
 					<h4 class="mg-md text-sm-left text-center">
 						<br>
-					</h4><img src="img/lazyload-ph.png" data-src="img/LogosUMDB.svg" class="img-fluid mx-auto d-block lazyload" alt="LogosUMDB" />
+					</h4><img src="{% static 'devbank/lazyload-ph.png' %}" data-src="{% static 'devbank/img/LogosUMDB.svg' %}" class="img-fluid mx-auto d-block lazyload" alt="LogosUMDB" />
 				</div>
 			</div>
 		<div class="row voffset-md">
