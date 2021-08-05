@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m%hx(a79ou29cmy=cx$$_+c&q9cajpbh6d4zm#ea@gcyg^2i3r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['devbank.duckdns.org']
+ALLOWED_HOSTS = ['devbank.duckdns.org', '127.0.0.1', 'developers.unimagdalena.edu.co', '10.11.60.10' ]
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'devbank',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
+        
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
