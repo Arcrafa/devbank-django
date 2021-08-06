@@ -20,29 +20,14 @@ form.addEventListener("submit", function (e) {
     axios.post(url, formData)
   .then(function (response) {
     console.log(response);
+    alert("inscrito")
   })
   .catch(function (error) {
     console.log(error);
+    alert("error en http:"+error)
   });
   } catch (err) {
-    if (err.reponse) {
-      document.querySelector(".fail-messg").style.display = "block";
-      setTimeout(function () {
-        document.querySelector(".fail-messg").style.display = "none";
-        form.reset();
-      }, 3000);
-    } else if (err.request) {
-      document.querySelector(".fail-messg").style.display = "block";
-      setTimeout(function () {
-        document.querySelector(".fail-messg").style.display = "none";
-        form.reset();
-      }, 3000);
-    } else if (err.notValid) {
-      console.log("Notvalid");
-      //Do what you want if the form is not validated
-    } else {
-      console.log(err);
-    }
+    alert("error")
   }
 });
 /*$(function()
