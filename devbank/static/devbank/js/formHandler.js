@@ -1,3 +1,50 @@
+var form=document.getElementById("form")
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+
+  try {
+    let url = "http://developers.unimagdalena.edu.co/api/interested/"
+
+
+    let formData = {
+        full_name: document.getElementById("full_name").value,
+        student_code:document.getElementById("student_code").value ,
+        email: document.getElementById("email").value,
+        category:document.getElementById("category").value
+    }
+
+
+
+    console.log(formData);
+    axios.post(url, formData)
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  } catch (err) {
+    if (err.reponse) {
+      document.querySelector(".fail-messg").style.display = "block";
+      setTimeout(function () {
+        document.querySelector(".fail-messg").style.display = "none";
+        form.reset();
+      }, 3000);
+    } else if (err.request) {
+      document.querySelector(".fail-messg").style.display = "block";
+      setTimeout(function () {
+        document.querySelector(".fail-messg").style.display = "none";
+        form.reset();
+      }, 3000);
+    } else if (err.notValid) {
+      console.log("Notvalid");
+      //Do what you want if the form is not validated
+    } else {
+      console.log(err);
+    }
+  }
+});
 /*$(function()
 {
 	$('[data-form-type="blocs-form"] input,[data-form-type="blocs-form"] textarea').jqBootstrapValidation(
