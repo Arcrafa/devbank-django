@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 .idea/*
 data/.DS_Store
 devbank/.DS_Store
 devbank/templates/.DS_Store
 .DS_Store
+=======
+data
+>>>>>>> main
